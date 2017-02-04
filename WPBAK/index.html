@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '350114705186213');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=350114705186213&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<meta charset="UTF-8">
+
+<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+
+<meta content="" name="description" />
+
+<meta content="" name="author" /><!--[if IE]>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]--><!-- Favicon Icon -->
+<link href="assets/img/favicon.ico" rel="icon" />
+
+<title>Vacaciones CRM</title>
+
+<!-- BOOTSTRAP CORE CSS -->
+<link href="assets/css/bootstrap.css" rel="stylesheet" /><!-- ION ICONS STYLES -->
+<link href="assets/css/bootstrap-social.css" rel="stylesheet" /><!-- ION ICONS STYLES -->
+<link href="assets/css/ionicons.css" rel="stylesheet" /><!-- FONT AWESOME ICONS STYLES -->
+<link href="assets/css/font-awesome.css" rel="stylesheet" /><!-- CUSTOM CSS -->
+<link href="assets/css/style.css" rel="stylesheet" /><!-- JQUERY UI CSS -->
+<link href="assets/css/jquery-ui.theme.min.css" rel="stylesheet" />
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+
+<!-- HEADER SECTION START-->
+<header class="container-fluid" id="header">
+
+	<div class="row">
+
+		<div class="navbar-header">
+			<!--aria-expanded="false" aria-controls="navbar"-->
+			<button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=".navbar-ex1-collapse">
+
+				<span class="sr-only">Toggle navigation</span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+      			<span class="icon-bar"></span>
+			</button>
+
+			<a class="navbar-brand" href="#">
+				<div class="hidden-xs hidden-sm">VACACIONES CANCÚN RIVIERA MAYA</div>
+				<div class="visible-xs visible-sm ">VCRM</div>
+			</a>
+
+		</div>
+
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+
+			<ul class="nav navbar-nav navbar-right menu-links scroll-me">
+
+				<li class="active"><a href="#home">Inicio</a></li>
+
+				<li><a href="#destinos">Destinos</a></li>
+
+				<li><a href="#hoteles">Hoteles</a></li>
+
+				<li><a href="#about">Nosotros</a></li>
+
+				<!--<li><a href="#clients"> <i class="ion-ios-grid-view-outline"></i> Clientes</a></li>-->
+
+				<li><a href="#email-subscribe">Contacto</a></li>
+
+				<li><a href="http://www.facebook.com/vacacionescancunrivieramaya" class="btn btn-social-icon btn-facebook" target="_blank"><span class="fa fa-facebook"></span></a></li>
+
+				<li><a href="http://twitter.com/VacacionesCRM" class="btn btn-social-icon btn-twitter" target="_blank"><span class="fa fa-twitter"></span></a></li>
+			</ul>
+
+		</div>
+
+	</div>
+
+</header>
+<!-- HEADER SECTION END-->
+
+<script>
+function limpiar() {
+    setTimeout('document.formulario.reset()',2000);
+    return false;
+}
+</script>
+
+<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs form_home">
+	<h2 class="text-center">Recibir más información</h2>
+	<form id="postcontent2" method="post" onSubmit="return limpiar()">
+
+		<div class="form-group">
+			<input type="text" class="form-control" name="nombre" placeholder="Nombre..." required="" type="text" />
+		</div>
+
+		<div class="form-group">
+			<input class="form-control" maxlength="13" minlength="10" name="telefono" placeholder="Teléfono y clave lada" required="" type="tel" />
+		</div>
+
+		<div class="form-group">
+			<input type="text" class="form-control" name="ciudad" placeholder="Ciudad" type="text" /></div>
+
+		<div class="form-group">
+			<input type="email" class="form-control" name="email" placeholder="email@ejemplo.com" required="" type="email" />
+		</div>
+
+		<div class="form-group">
+			<textarea class="form-control" name="comentarios" placeholder="Comentarios..."></textarea>
+		</div>
+
+		<div class="form-group">
+			<div id="mensaje2">
+				<script>
+
+				</script>
+
+			</div>
+		</div>
+
+    				<div class="form-group">
+
+            				<label class="checkbox-inline checkbox-fb">
+                				<input type="checkbox" value="agree"  required="">  Accepto <a href="http://www.vacacionescancunrivieramaya.com/terminos_y_condiciones.html" valor="4">Terminos y condiciones</a>.
+            				</label>
+    				</div>
+
+		<div class="form-group">
+			<button class="btn btn-danger btn-lg btn-block hidden-xs" id="enviar2" type="submit">&iexcl;Enviar!</button>
+			<button class="btn btn-success btn-lg btn-block visible-xs" id="enviar2" type="submit">&iexcl;Enviar!</button>
+		</div>
+
+	</form>
+
+
+</div>
+
+
+<!--HOME SECTION START  -->
+<div id="home">
+<div id="overlay">
+<div class="carousel slide" data-ride="carousel" id="carrusel" data-interval="8000">
+<ol class="carousel-indicators">
+	<li class="active" data-slide-to="0" data-target="#carrusel"></li>
+	<li data-slide-to="1" data-target="#carrusel" class="active"></li>
+	<li data-slide-to="2" data-target="#carrusel"></li>
+	<li data-slide-to="3" data-target="#carrusel"></li>
+	<li data-slide-to="4" data-target="#carrusel"></li>
+	<li data-slide-to="5" data-target="#carrusel"></li>
+	<li data-slide-to="6" data-target="#carrusel"></li>
+	<li data-slide-to="7" data-target="#carrusel"></li>
+</ol>
+
+
+<div class="carousel-inner" role="listbox">
+
+
+	<figure class="item active">
+		<img class="img-responsive" src="assets/img/carrusel/img1.jpg" />
+	    <figcaption class="carousel-caption">
+        </figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/img2.jpg" />
+	    <figcaption class="carousel-caption">
+	        </figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/img3.jpg" />
+	  	    <figcaption class="carousel-caption">
+        	</figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/vacaciones_cancun_riviera_maya_slide_4.jpg" />
+	    	<figcaption class="carousel-caption">
+            	<h2>¡Disfruta el mejor todo incluido ilimitado!.</h2>
+        	</figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/vacaciones_cancun_riviera_maya_slide_5.jpg" />
+	    	<figcaption class="carousel-caption">
+            	<h2>¡Elige entre los mejores destinos de playa del Caribe</h2>
+        	</figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/vacaciones_cancun_riviera_maya_slide_6.jpg" />
+	    	<figcaption class="carousel-caption">
+            	<h2>¡Vacaciona con los mejores precios, registrate y te llamaremos!.</h2>
+        	</figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/vacaciones_cancun_riviera_maya_slide_7.jpg" />
+	    	<figcaption class="carousel-caption">
+            	<h2>Paquetes desde $11,990 por 5 Días!</h2>
+        	</figcaption>
+
+	</figure>
+
+	<figure class="item">
+		<img class="img-responsive" src="assets/img/carrusel/vacaciones_cancun_riviera_maya_slide_8.jpg" />
+	    	<figcaption class="carousel-caption">
+           		<h2>¡Descubre las maravillas de estos destinos que ponemos a tu alcance!</h2>
+        	</figcaption>
+
+	</figure>
+	<!-- Controls -->
+	<a class="left carousel-control" data-slide="prev" href="#carrusel" role="button">
+		<span class="sr-only">Anterior</span>
+	</a>
+	<a class="right carousel-control" data-slide="next" href="#carrusel" role="button">
+		<span class="sr-only">Siguiente</span>
+	</a>
+	<div class="logo_buen_fin_home"></div>
+
+</div>
+
+
+</div>
+</div>
+</div><!-- slide end -->
+
+<!--  BUEN FIN 2016
+<div class="visible-xs">
+
+	<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/vacaciones_cancun_riviera_maya_venta_nocturna_buen_fin_mobile.jpg">
+
+</div>
+ -->
+
+
+
+<div class="container-fluid  phones_home">
+
+			<h1 class="text-center phones">Llámanos sin costo <span class="led"><b>01 800 11 20 155</b></span></h1>
+</div>
+
+
+
+
+<div class="col-lg-3 col-md-3 col-sm-4 visible-xs form_home">
+	<h2 class="text-center">Recibir más información</h2>
+	<form id="postcontent2" method="post">
+
+		<div class="form-group">
+			<input type="text" class="form-control" name="nombre" placeholder="Nombre..." required="" type="text" />
+		</div>
+
+		<div class="form-group">
+			<input class="form-control" maxlength="10" minlength="10" name="telefono" placeholder="Teléfono y clave lada" required="" type="tel" />
+		</div>
+
+		<div class="form-group">
+			<input type="text" class="form-control" name="ciudad" placeholder="Ciudad" type="text" /></div>
+
+		<div class="form-group">
+			<input type="email" class="form-control" name="email" placeholder="email@ejemplo.com" required="" type="email" /></div>
+
+		<div class="form-group">
+			<textarea class="form-control" name="comentarios" placeholder="Comentarios..."></textarea></div>
+
+		<div class="form-group">
+			<div id="mensaje2"></div>
+		</div>
+
+		<div class="form-group">
+			<button class="btn btn-danger btn-lg btn-block hidden-xs" id="enviar2" type="submit">&iexcl;Enviar!</button>
+			<button class="btn btn-success btn-lg btn-block visible-xs" id="enviar2" type="submit">&iexcl;Enviar!</button>
+		</div>
+
+	</form>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<section id="destinos">
+<div class="container-fluid">
+	<div class="row text-center" style="border:1px black;">
+		<h2 class="section_title">Destinos</h2>
+	</div>
+	<div id="rootwizard" class="tabbable tabs-left">
+		<ul class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+		<article class="destinos_banner">
+			<h2>Los mejores destinos</h2>
+		</article>
+		  	<li><a href="#tab1" data-toggle="tab"><b>Cancún</b></a></li>
+			<li><a href="#tab2" data-toggle="tab"><b>Acapulco</b></a></li>
+			<li><a href="#tab11" data-toggle="tab"><b>Orlando</b></a></li>
+			<li><a href="#tab4" data-toggle="tab"><b>Las vegas</b></a></li>
+			<li><a href="#tab6" data-toggle="tab"><b>Miami</b></a></li>
+			<li><a href="#tab7" data-toggle="tab"><b>Nuevo Vallarta</b></a></li>
+			<li><a href="#tab8" data-toggle="tab"><b>Playa del Carmen</b></a></li>
+			<li><a href="#tab9" data-toggle="tab"><b>Riviera Maya</b></a></li>
+			<li><a href="#tab10" data-toggle="tab"><b>Puerto Vallarta</b></a></li>
+			<li><a href="#tab3" data-toggle="tab"><b>Costa Rica</b></a></li>
+			<li><a href="#tab5" data-toggle="tab"><b>Los Cabos San Lucas</b></a></li>
+			<li><a href="#tab12" data-toggle="tab"><b>Bahamas</b></a></li>
+			<li><a href="#tab13" data-toggle="tab"><b>Republica Dominicana</b></a></li>
+		</ul>
+		<div class="tab-content col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	    	<figure class="tab-pane active" id="tab1">
+	      		<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_cancun.jpg" class="img-responsive">
+	      		<figcaption></figcaption>
+	    	</figure>
+	    	<figure class="tab-pane" id="tab2">
+	      		<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_acapulco.jpg" class="img-responsive">
+	      		<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab3">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_costa_rica.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab4">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_las_vegas.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab5">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_los_cabos_san_lucas.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab6">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_miami.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+	    	<figure class="tab-pane" id="tab7">
+	      		<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_nuevo_vallarta.jpg" class="img-responsive">
+	      		<figcaption></figcaption>
+	    	</figure>
+	    	<figure class="tab-pane" id="tab8">
+	      		<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_playa_del_carmen.jpg" class="img-responsive">
+	      		<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab9">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_riviera_maya.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab10">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_puerto_vallarta.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab11">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_disney.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab12">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_bahamas.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<figure class="tab-pane" id="tab13">
+				<img src="http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_republica_dominicana.jpg" class="img-responsive">
+				<figcaption></figcaption>
+	    	</figure>
+			<!--<ul class="pager wizard">
+				<li class="previous first" style="display:none;"><a href="#">First</a></li>
+				<li class="previous"><a href="#">Previous</a></li>
+				<li class="next last" style="display:none;"><a href="#">Last</a></li>
+		  		<li class="next"><a href="#">Next</a></li>
+			</ul>-->
+		</div>
+	</div>
+
+	</div><!--end row-->
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ABOUT SECTION END--><!-- FEATURES SECTION START-->
+
+<section id="hoteles">
+
+	<div class="container-fluid">
+
+		<div class="row text-center" style="border:1px black;">
+
+			<h2 class="section_title">Hoteles</h2>
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idOmni" valor="omni">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/paradisuslaesmeralda-fc-carrusel1-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Paradisus la Esmeralda</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+			</div>
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idSandos" valor="sandos">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/bah-pool-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Bahamas Flamingo Bay</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+						<a class="hoteles" href="#header" id="idCaracol" valor="caracol">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/pool3-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Paradisus Cancún</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+						<a class="hoteles" href="#header" id="idMeliacozumel" valor="meliacozumel">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/525790_232_w-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Meliá Cozumel</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idWestgate" valor="westgate">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/Westgate-Orlando-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Westgate Orlando</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+						<a class="hoteles" href="#header" id="idReef" valor="reef">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/03-560x460.jpg" />
+						</a>
+						<figcaption class="container-fluid">
+							<h4>The Reef Playacar</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idHolidayinn" valor="holidayinn">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/Puerto-Vallarta-Costa-Club-Piscina_3-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Holiday Inn o Costa Club</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idGrandsirenispc" valor="grandsirenispc">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/sirenistropical.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Princess Resort & Spa Punta Cana</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+						<a class="hoteles" href="#header" id="idSheraton" valor="sheraton">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/00193773_gp-560x460.jpg" />
+						</a>
+						<figcaption class="container-fluid">
+							<h4>Sheraton Buganvilias (EP)</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+					</figure>
+
+
+			</div>
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idVillarloreto" valor="villasloreto">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/getImage-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Villas del Palmar Loreto</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idMayanpalacea" valor="mayanpalacea">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/MayanPalace_Gallery_4-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>Mayan Palace Acapulco</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+
+			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 hotel-list">
+					<figure class="row">
+
+						<a class="hoteles" href="#header" id="idCalypso" valor="calypso">
+							<img class="img-responsive" src="http://vacacionescancunrivieramaya.com/assets/img/hoteles/filename-pool1-jpg-thumbnail0-560x460.jpg" />
+						</a>
+
+						<figcaption class="container-fluid">
+							<h4>The Inn by Calypso Orlando</h4>
+							<h6 class="pull-left">5 Días 4 noches</h6><h6 class="pull-right">$19,800</h6>
+						</figcaption>
+
+					</figure>
+
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+
+
+
+<!-- FEATURES SECTION END--><!-- CLIENTS SECTION START--><!--<section id="clients">
+		<div class="overlay">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div id="carruselclientes" class="carousel slide" data-ride="carousel">
+							<div class="carousel-inner" >
+								<div class="active item">
+									<img src="assets/img/clientes/teran_1.jpg" class="img-responsive" style="max-height:550px;">
+								</div>
+								<div class="item">
+									<img src="assets/img/clientes/ocampo_1.jpg" class="img-responsive" style="max-height:550px;">
+								</div>
+								<div class="item">
+									<img src="assets/img/clientes/teran_2.jpg" class="img-responsive" style="max-height:550px;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  client-cover" >
+						<div id="carousel-example" class="carousel slide  text-center" data-ride="carousel">
+
+							<div class="carousel-inner">
+								<div class="active item">
+									<div class="testimonial-section">
+										Gracias por ser una parte tan.divertida y participación en nuestras vacaciones.
+Les envió unas fotos de nuestra última estancia en Los Cabos, en el hotel Sandos Finisterra
+									</div>
+									<div class="testimonial-section-name">
+										<img src="assets/img/client1.jpg" alt="" class="img-circle" />
+										Familia Teran
+									</div>
+
+								</div>
+								<div class="item">
+									<div class="testimonial-section">
+										testimonio
+									</div>
+									<div class="testimonial-section-name">
+										<img src="assets/img/client2.jpg" alt="" class="img-circle" />
+										nombre
+									</div>
+
+								</div>
+								<div class="item">
+									<div class="testimonial-section">
+										testimonio
+									</div>
+									<div class="testimonial-section-name">
+										<img src="assets/img/client3.jpg" alt="" class="img-circle" />
+										nombre
+									</div>
+
+								</div>
+								<!--INDICATORS--><!--<ol class="carousel-indicators carousel-indicators-set">
+									<li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+									<li data-target="#carousel-example" data-slide-to="1"></li>
+									<li data-target="#carousel-example" data-slide-to="2"></li>
+								</ol>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>--><!-- CLIENTS SECTION END--><!-- SUBSCRIBE SECTION START-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="email-subscribe">
+
+	<div class="container-fluid form_oficial" data-speed="4" data-type="background">
+
+<!--
+
+		<div class="hidden-xs lgo-buenfin">
+			<img src="http://vacacionescancunrivieramaya.com//assets/img/hoy.png">
+		</div>
+	 -->
+
+
+		<div class=" text-center">
+
+			<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-12 form_pro">
+
+				<h2 class="section_title">Recibe nuestras promociones</h2>
+
+				<form id="postcontent" method="post">
+
+					<div class="form-group">
+						<input class="form-control" name="nombre" placeholder="Nombre..." required="" type="text" />
+					</div>
+
+					<div class="form-group">
+
+						<input class="form-control" maxlength="13" minlength="10" name="telefono" placeholder="(Teléfono y clave lada)" required="" type="tel" />
+
+					</div>
+
+					<div class="form-group">
+
+						<input class="form-control" name="ciudad" placeholder="Ciudad" type="text" />
+
+					</div>
+
+					<div class="form-group">
+						<input class="form-control" name="email" placeholder="email@ejemplo.com" required="" type="email" />
+						</div>
+
+					<div class="form-group">
+						<textarea class="form-control" name="comentarios" placeholder="Comentarios..."></textarea>
+					</div>
+
+					<div class="form-group">
+						<div id="mensaje">
+
+						<!--	<script>
+
+							</script>-->
+						</div>
+
+					</div>
+
+
+    				<div class="form-group">
+
+            				<label class="checkbox-inline checkbox-fb">
+                				<input type="checkbox" value="agree"  required="">  Accepto <a href="http://www.vacacionescancunrivieramaya.com/terminos_y_condiciones.html" valor="4">Terminos y condiciones</a>.
+            				</label>
+    				</div>
+
+					<div class="form-group">
+						<button class="btn btn-danger btn-lg btn-block" id="enviar" type="submit">&iexcl;Registrarme!</button>
+					</div>
+
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</section>
+<!-- SUBSCRIBE SECTION END-->
+
+
+
+
+
+
+
+<!-- CONTACT SECTION START-->
+
+<section id="about">
+
+	<div class="container-fluid">
+
+
+			<h1 class="text-center phones">Llámanos sin costo a los teléfonos <strong class="led">01 800 11 20 155</strong></h1>
+		<br>
+
+
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 aboutusclass">
+
+				<h2 class="section_title">Quienes somos</h2>
+
+				<article>
+
+					<p class="text-justify"><small>Somos una empresa que está dedicada a proporcionar el servicio e instalaciones de la más alta calidad a nuestros clientes y ser líder en el mercado de los segmentos de lujo y alto poder adquisitivo de la industria de la propiedad vacacional en México, oeste de los Estados Unidos y oeste de Canadá. Proporcionar servicios de la más alta calidad para la organización de sus vacaciones, considerando a la vez los requerimientos particulares de nuestros clientes.</small></p>
+
+					<a href="mailto:info@vacacionescancunrivieramaya.com">info@vacacionescancunrivieramaya.com</a>
+
+				</article>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+				<img alt="" class="img-responsive center-block" src="assets/img/logo.png" />
+				<p><b>Cancún, Quintana Roo.</b><br>
+				No olvides registrate con nosotros para recibir promociones.</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+				<a class="twitter-timeline" href="https://twitter.com/VacacionesCRM" data-widget-id="663039604942094336">Tweets por el @VacacionesCRM.</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+			</div>
+
+	</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CONTACT SECTION END--><!--AVISOS-->
+
+<section class="container" id="avisos">
+	<div class="row overlay text-center"></div>
+</section>
+<legend></legend>
+
+<p></p>
+<!--
+<div class="container-fluid partners">
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+
+		<a valor="1"><!--class="avisos"
+			<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/sectur_logotipo.png" /></a>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/mexico_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/ciudades_mexicanas_patrimonio_mundial_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/tianguis_turistico_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/socio_amipci_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/empresa_socialmente_responsable_logotipo.png" />
+	</div>
+</div>
+<div class="container-fluid partners">
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/the_code_org_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/iata_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/best_place_to_work_logotipo.png" />
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6">
+		<img class="img-responsive center-block" src="http://vacacionescancunrivieramaya.com/assets/img/sectur/buen_fin_logotipo.png" />
+	</div>
+</div>
+<br><br>
+<div class="col-lg-2 col-md-2 col-sm-12">
+        <a href="#" class="avisos" valor="1">
+        	<img class="img-responsive center-block" src="assets/img/sectur/constancia_thumbnail.png"</a>
+            </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid text-center footer-menu">
+
+	<div class="col-lg-4 col-md-4 col-xs-12">
+		<a href="#about" valor="2">
+			<span>Nosotros</span>
+		</a>
+	</div>
+
+	<div class="col-lg-4 col-md-4 col-xs-12">
+		<a href="http://www.vacacionescancunrivieramaya.com/terminos_y_condiciones.html" valor="3">
+			<span>Términos y condiciones</span>
+		</a>
+	</div>
+
+	<div class="col-lg-4 col-md-4 col-xs-12">
+		<a href="http://www.vacacionescancunrivieramaya.com/politicas_de_privacidad.html" valor="4">
+			<span>Aviso de privacidad</span>
+		</a>
+	</div>
+
+	<div class="col-lg-2 col-md-2 col-sm-12"></div>
+
+	<p><!--AVISOS--></p>
+
+	<div id="miAviso"></div>
+
+	<p><!-- CORE JQUERY  SCRIPTS
+		<script src="assets/js/jquery-1.11.1.js"></script>
+    	<script src="assets/js/ie-10-view-port.js"></script>--><!-- FOOTER SECTION START--></p>
+</div>
+
+<br>
+
+<footer>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-lg-12 col-md-12 col-sm-12">
+				<a href="www.vacacionescancunrivieramaya.com">&copy; 2015 vacacionescancunrivieramaya.com</a>
+			</div>
+		</div>
+	</div>
+</footer><!-- FOOTER SECTION END-->
+
+
+
+
+
+
+
+<!-- IE10 viewport hack  -->
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+
+<!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!-- CORE JQUERY UI SCRIPTS -->
+<script src="assets/js/jquery-ui.min.js"></script>
+
+<!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="assets/js/bootstrap.js"></script>
+<!-- SCROLLING SCRIPTS PLUGIN  -->
+<script src="assets/js/jquery.easing.min.js"></script>
+<!-- CUSTOM SCRIPTS   -->
+<script src="assets/js/custom.js"></script>
+<!-- UNDERSCORE   -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.3.3/underscore-min.js" type="text/javascript"></script>
+<!-- BACKBONE   -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js" type="text/javascript"></script>
+
+<!--LIVE JS -->
+<script src="assets/js/live.js"></script>
+
+<!-- TABS DESTINOS
+<script>
+$(document).ready(function() {
+  	$('#rootwizard').bootstrapWizard({'tabClass': 'nav nav-tabs'});
+});
+</script>-->
+
+<!-- GOOGLE ANALITYCS  -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69937128-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+</body>
+</html>

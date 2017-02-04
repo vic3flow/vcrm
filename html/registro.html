@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro completado</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="../assets/css/style.css" rel="stylesheet" /><!-- JQUERY UI CSS -->
+        <style>
+            body{
+
+                background: url(http://www.vacacionescancunrivieramaya.com/assets/img/vcrm_form.jpg) no-repeat center center fixed;
+               -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+
+            }
+            .container-fluid {
+
+            }
+            .jumbotron{
+                -moz-box-shadow:    inset 0 0 10px #000000;
+                -webkit-box-shadow: inset 0 0 10px #000000;
+                box-shadow:         inset 0 0 10px #000000;
+                width: 700px;
+                height: 300px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -350px;
+                margin-top: -150px;
+                box-sizing: border-box;
+            }
+        </style>
+
+
+<!-- Facebook Conversion Code for Pixel VCRM           ANTERIOR
+<script>(function() {
+var _fbq = window._fbq || (window._fbq = []);
+if (!_fbq.loaded) {
+var fbds = document.createElement('script');
+fbds.async = true;
+fbds.src = '//connect.facebook.net/en_US/fbds.js';
+var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(fbds, s);
+_fbq.loaded = true;
+}
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', '6037382407664', {'value':'0.00','currency':'MXN'}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6037382407664&amp;cd[value]=0.00&amp;cd[currency]=MXN&amp;noscript=1" /></noscript>  -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '350114705186213');
+fbq('track', 'CompleteRegistration');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=350114705186213&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+    </head>
+    <body>
+
+<!-- HEADER SECTION START-->
+<header class="container-fluid" id="header">
+
+    <div class="row">
+
+        <div class="navbar-header">
+            <!--aria-expanded="false" aria-controls="navbar"-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse"  data-target=".navbar-ex1-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <div class="hidden-xs hidden-sm">VACACIONES CANCÚN RIVIERA MAYA</div>
+                <div class="visible-xs visible-sm ">VCRM</div>
+            </a>
+
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+
+            <ul class="nav navbar-nav navbar-right menu-links scroll-me">
+                <li class="active"><a href="http://www.vacacionescancunrivieramaya.com/">Inicio</a></p>
+                <!--
+                <li class="active"><a href="#home">Inicio</a></p>
+
+                <p><a href="#destinos">Destinos</a></p>
+
+                <p><a href="#hoteles">Hoteles</a></p>
+
+                <p><a href="#about">Nosotros</a></p>
+
+                <p><a href="#clients"> <i class="ion-ios-grid-view-outline"></i> Clientes</a></p>
+
+                <p><a href="#email-subscribe">Contacto</a></p>
+
+                <p><a href="http://www.facebook.com/vacacionescancunrivieramaya" class="btn btn-social-icon btn-facebook" target="_blank"><span class="fa fa-facebook"></span></a></p>
+
+                <p><a href="http://twitter.com/VacacionesCRM" class="btn btn-social-icon btn-twitter" target="_blank"><span class="fa fa-twitter"></span></a></p>
+                -->
+            </ul>
+
+        </div>
+
+    </div>
+
+</header>
+        <div class="container-fluid">
+
+                <div class="row">
+                    <div class="jumbotron">
+                        <div class="col-md-12">
+                            <h1>Gracias por su interés</h1>
+                            <p>Nuestros asesores se comunicarán con usted en breve</p>
+                            <div class="form-group">
+                                <a class="btn btn-primary" href="#" onclick="history.back();" id="regresar">Regresar</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <script src="../assets/js/jquery-1.11.2.min.js"></script>
+        <script>
+
+            $("#regresar").click(function(){
+                window.location.href('http://vacacionescancunrivieramaya.com');
+            });
+        </script>
+    </body>
+</html>

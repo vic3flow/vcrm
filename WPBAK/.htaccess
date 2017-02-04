@@ -1,0 +1,14 @@
+
+RewriteEngine on
+
+#RewriteRule /vcrm/index.php
+#RewriteRule ^vacacionescancunrivieramaya.com/vcrm/index.php$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?vacacionescancunrivieramaya.com/$
+# Cambiar 'subfolder' por el directorio que se desea usar como dominio principal.
+RewriteCond %{REQUEST_URI} !^/vcrm/
+
+# BEGIN WordPress
+
+# END WordPress
+

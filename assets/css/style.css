@@ -1,0 +1,824 @@
+﻿/*=============================================================
+    Authour URL: sk8walker / www.vacacionescancunrivieramaya.com
+========================================================  */
+
+/*================================
+    GOOGLE FONT
+==================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato); /* FREE GOOGLE FONTS */
+@import url(http://fonts.googleapis.com/css?family=Poiret+One);
+/*================================
+  GENERAL STYLES
+==================================*/
+
+body {
+   font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    font-size: 16px;
+    webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+   -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+    webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+    -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+    box-sizing: border-box;
+}
+
+section {
+    padding:50px 0px 0px 0px;
+    webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+   -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+   box-sizing: border-box;
+}
+.aboutusclass{
+    border:1px solid #e6e6e6;
+    border-radius: .0;
+    background: rgba(0,0,0,.2);
+}
+.aboutusclass p {
+    font-size: 1.3em;
+}
+.pad-bottom {
+    padding-bottom: 70px;
+}
+
+.text-right {
+    text-align:right;
+}
+
+.head-line {
+ margin-bottom: 20px;
+line-height: 30px;
+font-size: 25px;
+color: #737373;
+}
+
+#miAviso{
+    position: relative;
+}
+#dialogo{
+    overflow: auto;
+    overflow-x:hidden;
+    padding: 10px;
+    font-size:.8em;
+    left: 40px;
+    top: 40px;
+    display: none;
+    width: 700px;
+    webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+   -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+   box-sizing: border-box;
+
+}
+.navbar-brand {
+    color:#fff;
+    font-family: 'Poiret One';
+    font-size: 1.5em;
+    margin-top:.2em;
+    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.75);
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+.phones {
+    font-family: 'Poiret One';
+}
+.phones_home {
+      background: #03a9f4;
+      margin-bottom:0;
+}
+.phones_home h1 {
+    color: #fff;
+    font-family: 'Poiret One';
+    padding: .2em;
+    font-weight: bold;
+}
+.phones_home h1 .led {
+color: #e50a5f;
+font-size: 1.5em;
+font-family: arial, verdana;
+animation: parpadeo .8s;
+-webkit-animation: parpadeo .8s;
+-moz-animation: parpadeo .8s;
+animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;
+}
+@keyframes parpadeo {
+0% {color:#e50a5f;}
+80% {color: #e50a5f;}
+100%{color: #03a9f4;}
+}
+
+@-webkit-keyframes parpadeo {
+0% {color: yellow;}
+80% {color: yellow;}
+100%{color: #03a9f4;}
+}
+.callphone {
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+#rootwizard ul {
+    background: rgba(28,179,174,1);
+    padding: 0;
+}
+#rootwizard ul li {
+    list-style: none;
+    padding: 0 1em;
+    background: rgba(0,0,0,.05);
+}
+#rootwizard ul li a {
+    color: #fff;
+    font-family: 'Poiret One', arial;
+}
+#rootwizard ul li.active {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background:#05082D;
+}
+#rootwizard ul li.active a {
+    color:#fff;
+}
+#rootwizard ul li::after {
+    width: 0;
+    height: 0;
+    border-left: 100px solid #f0ad4e;
+    border-top: 50px solid transparent;
+    border-bottom: 50px solid transparent;
+}
+.partners {
+    background: #333;
+    padding: 2em 0;
+}
+.destinos_banner h2 {
+    background: #05082D;
+    font-family: 'Poiret One', arial;
+    color:#fff;
+    font-size:1.5em;
+    text-align: center;
+    padding: 1em 1em;
+    margin: 0;
+}
+.logo_buen_fin_home {
+    width: 200px;
+    height: 200px;
+    top:1em;
+    right:2.5em;
+    position: absolute;
+    z-index: 99;
+     /*background: url(http://www.vacacionescancunrivieramaya.com/assets/img/css_styles_img/iconbuenfin.png) no-repeat;/*
+    background-size: 150px 150px;
+    /*-moz-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    -webkit-box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
+    box-shadow: 0px 0px 20px rgba(255,255,255,0.8);*/
+    -webkit-animation-name: buzz-out;
+    animation-name: buzz-out;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes buzz-out {
+  0% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  1% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  2% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  3% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  4% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  5% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  6% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  7% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  8% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  9% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  10% {
+    -webkit-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(0) rotate(0);
+    transform: translateX(0) rotate(0);
+  }
+}
+.checkbox-fb{
+    color:#fff;
+    font-size:.9em;
+}
+ .checkbox-fb a {
+    color: #ccc;
+ }
+.lgo-buenfin {
+    max-width: 200px;
+    z-index: 99;
+    margin-left:2em;
+    margin-top:.5em;
+    position: absolute;
+    float: left;
+}
+.lgo-buenfin img {
+    max-width: 80%;
+    -webkit-animation-name: parpadeo;
+    animation-name:parpadeo;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+/*.lgo-buenfin h2 {
+    color: rgba(255,243,0,1);
+    font-size: 5em;
+    left:-1em;
+    top:-2em;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    -webkit-animation-name: parpadeo;
+    animation-name:parpadeo;
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}*/
+@keyframes parpadeo {
+0% {}
+50% {visibility: hidden;}
+100%{visibility: hidden;}
+}
+
+@-webkit-keyframes parpadeo {
+0% {}
+50% {visibility: hidden;}
+100%{visibility: hidden;}
+}
+/*================================
+  HEADER STYLES
+==================================*/
+
+header {
+    /*background-color:#48A5FF;*/
+    background-color:#05082D;
+    color:#fff;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+
+
+}
+
+    header .logo-wrapper{
+      height: 80px;
+      width: 80px;
+    }
+    header .menu-links {
+        padding-top:5px;
+    }
+ header .menu-links a {
+        font-size:16px;
+        color:#fff;
+        font-weight:900;
+        font-family: 'Poiret One', sans-serif;
+    }
+
+    li a:hover, li a:focus{
+        text-decoration:none;
+        -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+           transition: all 0.2s ease;
+    }
+
+    header .menu-links a:hover, header .menu-links a:focus {
+        text-decoration:none;
+        -webkit-transition: all 0.1s ease;
+        -moz-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+        background-color: rgba(36, 36, 36, 0.8);
+    }
+.form_home {
+    position: absolute;
+    background:rgba(0,0,0,.2);
+    margin-top:50px;
+    margin-left:4em;
+    z-index:99;
+    padding-top:.5em;
+}
+.form_home h2{
+    color: #333;
+    font-size: 1.5em;
+    margin: .5em 0;
+    background: #fff;
+    padding: .2em .5em;
+    border-radius: .2em;
+}
+.form_home input, .form_home textarea, .form_home placeholder {
+    background: rgba(0,0,0,.5);
+    color:#fff;
+    border-radius: 0;
+    border: 1px solid #333;
+}
+.form_home .enviar {
+    background: #840000;
+    border-radius: none;
+}
+#mensaje .bg-info{
+    font-size:1em;
+}
+.btn-social-icon {
+    margin:.5em;
+}
+/*================================
+  HOME SECTION STYLES
+==================================*/
+
+
+#home {
+    /*background: url(../img/home.jpg) no-repeat center center; */
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    padding-top: 50px;
+}
+
+    #home .overlay {
+
+        max-height:425px;
+        min-height:250px;
+        padding-bottom: 40px;
+        /*background-color: rgba(36, 36, 36, 0.1);
+        z-index:1;*/
+
+    }
+     #home h1 {
+      margin-bottom: 20px;
+line-height: 40px;
+font-size: 35px;
+color: #48A5FF;
+text-transform:uppercase;
+    }
+    #home h4 {
+      margin-bottom: 30px;
+line-height: 40px;
+font-size: 20px;
+color: #D0D0D0;
+    }
+
+.carousel-inner{
+    height:auto;
+}
+.carousel-caption {
+    right:0;
+    background: rgba(14,139,140,0.5);
+    padding: 0;
+}
+.carousel-caption h2 {
+        color: #fff;
+        font-size:2em;
+        padding: .5em 1em;
+        margin: 0;
+    }
+
+#lada800{
+    width: 100%;
+
+}
+
+/*================================
+  BUTTON STYLES
+==================================*/
+.btn-custom {
+   min-height:40px;
+    border-radius:30px;
+-webkit-border-radius:30px;
+-moz-border-radius:30px;
+
+-webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+   margin:25px 5px 5px 0px;
+   webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  box-sizing: border-box;
+}
+
+.btn-one {
+background-color: transparent;
+border:5px solid #48A5FF;
+color:#000;
+
+}
+ .btn-one:hover {
+ background-color:#48A5FF;
+ color:#fff;
+ text-decoration:none;
+    }
+
+ .btn-two {
+background-color: #48A5FF;
+border:5px solid #48A5FF;
+color:#fff;
+
+}
+ .btn-two:hover {
+ background-color:transparent;
+ color:#000;
+ text-decoration:none;
+    }
+.btn-three {
+
+background-color:transparent;
+border:5px solid #737373;
+color:#000;
+
+}
+.btn-three:hover {
+ background-color:#737373;
+ color:#fff;
+ text-decoration:none;
+}
+
+
+ /*================================
+    ABOUT STYLES
+==================================*/
+
+ .icon-wrapper {
+    padding-bottom:20px;
+    padding-top:20px;
+    font-size:50px;
+}
+
+.img-side {
+    max-height:420px;
+}
+ /*================================
+    CLIENTS SECTION STYLES
+==================================*/
+
+   #clients {
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    max-height: 600px;
+}
+
+
+    #carruselclientes{
+        padding: 0;
+        border: 0;
+        color: rgba(234, 234, 234, 1);
+        z-index: -1;
+    }
+
+
+
+    #clients .overlay {
+        background-color: rgba(36, 36, 36, 0.8);
+        min-height: 250px;
+        height: 600px;
+
+    }
+
+.client-cover {
+    /*background-color:#0094ff;*/
+    background-color:#6699ff;
+    padding:100px 50px 100px 50px;
+    color:#fff;
+}
+    /* TESTIMONIAL */
+       .testimonial-section {
+    width: 100%;
+
+    padding: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: relative;
+    border: 5px solid rgba(0, 79, 255, 0.24);
+font-size: 20px;
+color: rgba(234, 234, 234, 1);
+line-height: 35px;
+}
+.testimonial-section:after {
+    top: 100%;
+    left: 10%;
+    border: solid transparent;
+    content: " ";
+    position: absolute;
+    border-top-color:rgba(0, 79, 255, 0.24);
+    border-width: 15px;
+    margin-left: -15px;
+}
+
+.testimonial-section-name {
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align:left;
+    color:rgba(0, 79, 255, 1);
+    font-size:16px;
+}
+    .testimonial-section-name img {
+        width:100px;
+        border: 5px solid rgba(234, 234, 234, 1);
+    }
+.carousel-indicators-set {
+    position:static;
+    margin-left:0px;
+    z-index:100;
+    width:100%;
+    color:rgba(234, 234, 234, 1);
+}
+.carousel-indicators {
+    display: none;
+}
+/*================================
+    HOTELES STYLES
+==================================*/
+#hoteles {
+    background-color:rgba(234, 234, 234, 0.90);
+}
+#hoteles figure {
+    overflow: hidden;
+}
+#hoteles img{
+    padding: .2em;
+    padding-bottom: 0;
+    transform: scaleY(1);
+    transition: all 0.5s ease-in-out;
+}
+#hoteles img:hover{
+    transform: scale(2);
+    opacity: 5;
+}
+#hoteles figcaption {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    margin:0 .2em;
+
+}
+#hoteles div:nth-child(-n+6) figure figcaption{
+    bottom:.2em;
+    overflow: ;
+}
+#hoteles div:nth-child(n+7) figure figcaption{
+    bottom:.2em;
+    overflow: ;
+}
+#hoteles h4, #hoteles h6 {
+    color:#fff;
+    padding: .2em 0;
+    margin: 0;
+}
+#hoteles h4 {
+    font-family:'Poiret One', sans-serif;
+}
+#hoteles h6 {
+    font-weight: bold;
+}
+.section_title {
+    font-family:'Poiret One', sans-serif;
+}
+#destinos {
+    margin-top: -3em;
+}
+
+/*================================
+    EMAIL-SUBSCRIBE STYLES
+ ============================  */
+
+.form_pro
+{
+    background: rgba(0,0,0,.2);
+
+}
+.form_pro input, .form_pro textarea
+{
+   border-radius: 0;
+
+}
+.form_pro h2 {
+    color: #fff;
+}
+.form_pro .enviar {
+    font-size: 1.8em;
+}
+#email-subscribe .btn-subscribe
+{
+
+}
+
+.form_oficial {
+    background: url(http://www.vacacionescancunrivieramaya.com/assets/img/carrusel/vcrm_form.jpg) 50% 50px no-repeat;
+    background-size: 100%;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    padding: 50px 0;
+}
+
+/*================================
+    CONATCT SECTION STYLES
+==================================*/
+
+   #contact {
+    background: url(../img/ubicacion.png) no-repeat center center;
+    padding: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+}
+
+    #contact .overlay {
+        background-color: rgba(36, 36, 36, 0.8);
+        min-height: 350px;
+    }
+     #contact .social a, #contact .social a:hover, #contact .social a:focus {
+            margin: 2px;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.36);
+            color: #fff;
+            font-size: 25px;
+        }
+.space {
+    height:40px;
+}
+.contact-cover {
+    background-color:#0094ff;
+    padding:50px 50px 50px 50px;
+    color:#fff;
+}
+/*================================
+    FOOTER SECTION STYLES
+ ============================  */
+footer {
+    padding:15px;
+    /*background-color:#48A5FF;*/
+    background-color:#05082D;
+    color:#fff;
+    }
+    footer a,footer a:hover,footer a:focus {
+        color:#fff;
+        text-decoration:none;
+        margin-right:10px;
+        margin-left:10px;
+    }
+.footer-menu {
+    font-size: 1.2em;
+    color: #fff;
+}
+/*================================
+    RESPONSIVE STYLES
+ ============================  */
+
+@media (min-width: 100px) and (max-width: 767px) {
+#email-subscribe .form-control
+{
+display:block;
+width:100%;
+}
+.slide{
+    display: none;
+}
+.form_home {
+    margin-left:0;
+    background: #e50a5f;
+    background: rgba(229,10,45,.8);
+    /*background: url(http://www.vacacionescancunrivieramaya.com/assets/img/destinos/vacaciones_cancun_riviera_maya_disney.jpg);*/
+    position: relative;
+    margin: 0;
+}
+.phones_home {
+    top:10em;
+    z-index:99;
+}
+.phones_home h1 {
+    font-size: 2em;
+    text-align: center;
+}
+#email-subscribe .btn-subscribe
+{
+margin-top:20px;
+}
+.led::before {
+    content: ' '; display: block;
+}
+#hoteles {
+    margin-top:0em;
+}
+#destinos {
+    display: none;
+}
+.aboutusclass {
+    margin-bottom:1em;
+}
+
+#dialogo{
+width:100%;
+font-size: 1em;
+}
+
+.navbar-toggle {
+    border:1px solid #fff;
+}
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+#miAviso{
+
+}
+
+}
+
+/* Padding - just for asthetics on Bootsnipp.com */
+body { margin-top:20px; }
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
